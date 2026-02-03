@@ -7,6 +7,7 @@ import ProgressBar from './ui/ProgressBar'
 import Navigation from './ui/Navigation'
 import CoverSlide from './slides/CoverSlide'
 import ProblemSlide from './slides/ProblemSlide'
+import VisionSlide from './slides/VisionSlide'
 import BuildingBlocksSlide from './slides/BuildingBlocksSlide'
 import ArchitectureSlide from './slides/ArchitectureSlide'
 import UseCasesSlide from './slides/UseCasesSlide'
@@ -17,6 +18,7 @@ import DemoSlide from './slides/DemoSlide'
 const slides = [
   CoverSlide,
   ProblemSlide,
+  VisionSlide,
   BuildingBlocksSlide,
   ArchitectureSlide,
   UseCasesSlide,
