@@ -1,6 +1,6 @@
 # MCP Leading the People
 
-Interactive presentation for the [Claude Code Paris](https://lu.ma/claude-code-paris) meetup — February 2025.
+Interactive presentation for the [Claude Code Paris](https://luma.com/zdk7lr94?tk=A0f27d) meetup — February 2025.
 
 **[View the presentation](https://benoitvx.github.io/claude-code-paris-02/)**
 
