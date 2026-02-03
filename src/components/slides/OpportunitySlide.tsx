@@ -66,7 +66,7 @@ export default function OpportunitySlide() {
           className="flex items-start gap-4 text-lg"
         >
           <span className="mt-1 text-xl text-delacroix-gold">&#9874;</span>
-          <span className="text-delacroix-cream/80">Légifrance integration: in discussion</span>
+          <span className="text-delacroix-cream/80">Gateway architecture: designed</span>
         </motion.div>
 
         <motion.div
@@ -76,7 +76,7 @@ export default function OpportunitySlide() {
           className="flex items-start gap-4 text-lg"
         >
           <span className="mt-1 text-xl text-delacroix-gold">&#9874;</span>
-          <span className="text-delacroix-cream/80">Gateway architecture: designed</span>
+          <span className="text-delacroix-cream/80">Légifrance integration: in discussion</span>
         </motion.div>
       </div>
 
