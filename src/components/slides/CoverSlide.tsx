@@ -22,7 +22,7 @@ export default function CoverSlide() {
           transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
           className="text-6xl md:text-8xl font-display font-bold text-delacroix-cream mb-6 drop-shadow-2xl"
         >
-          MCP Leading the AI
+          MCP Leading the People
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -30,16 +30,28 @@ export default function CoverSlide() {
           transition={{ duration: 0.5, delay: 0.8, ease: 'easeOut' }}
           className="text-xl md:text-2xl text-delacroix-gold/80 mb-8"
         >
-          Connecting Claude &amp; co to French Public Data
+          My take on how to connect Claude &amp; co to French Public Data
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 1.2 }}
-          className="text-base text-delacroix-cream/60"
+          className="flex items-center gap-4 text-base text-delacroix-cream/60"
         >
-          <p>Benoit Vinceneux</p>
-          <p className="text-sm mt-1">CPO Data &amp; MCP — French Prime Minister&apos;s Digital Office</p>
+          <img
+            src={`${BASE_PATH}/images/benoitvinceneux.png`}
+            alt="Benoit Vinceneux"
+            className="w-12 h-12 rounded-full object-cover border-2 border-delacroix-gold/30"
+          />
+          <div className="text-left">
+            <p>Benoit Vinceneux &middot; <a
+              href="https://www.linkedin.com/in/benoitvinceneux/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-delacroix-gold hover:text-delacroix-cream transition-colors underline underline-offset-2"
+            >LinkedIn</a></p>
+            <p className="text-sm mt-0.5">CPO Data &amp; MCP — French Prime Minister&apos;s Digital Office</p>
+          </div>
         </motion.div>
       </div>
     </div>

@@ -4,13 +4,13 @@ import { motion } from 'framer-motion'
 import AnimatedText from '@/components/ui/AnimatedText'
 
 const dataSources = [
-  'data.gouv MCP',
+  'data.gouv.fr',
   'Légifrance',
-  'service-public',
+  'service-public.fr',
   'CNIL',
-  'Conseil constit.',
-  'travail-emploi',
-  'annuaires admin',
+  'Conseil constitutionnel',
+  'Travail-emploi',
+  'Administration directories',
 ]
 
 const principles = [
@@ -24,13 +24,13 @@ export default function ArchitectureSlide() {
   return (
     <div className="flex flex-col items-center justify-center h-full px-12 max-w-6xl mx-auto">
       <AnimatedText delay={0.1}>
-        <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-10">
+        <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-8">
           Architecture
         </h2>
       </AnimatedText>
 
       {/* Diagram */}
-      <div className="flex flex-col items-center gap-4 mb-8">
+      <div className="flex flex-col items-center gap-3 mb-6">
         {/* Client */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -38,10 +38,10 @@ export default function ArchitectureSlide() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="px-8 py-3 bg-delacroix-brown/40 border border-delacroix-gold/30 rounded-lg text-delacroix-cream text-center"
         >
-          Claude / Cursor / Any MCP Client
+          Claude, Cursor, Any AI Client
         </motion.div>
 
-        {/* Arrow */}
+        {/* Arrow down */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -61,14 +61,20 @@ export default function ArchitectureSlide() {
           MCP Gateway
         </motion.div>
 
-        {/* Arrow */}
+        {/* Arrows down */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3, delay: 1.1 }}
-          className="text-delacroix-gold/40 text-2xl"
+          className="flex gap-12 text-delacroix-gold/40 text-xl"
         >
-          &darr;
+          <span>&darr;</span>
+          <span>&darr;</span>
+          <span>&darr;</span>
+          <span>&darr;</span>
+          <span>&darr;</span>
+          <span>&darr;</span>
+          <span>&darr;</span>
         </motion.div>
 
         {/* Data sources grid */}
@@ -92,12 +98,13 @@ export default function ArchitectureSlide() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 2 }}
-        className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm text-delacroix-cream/50"
+        className="flex flex-col gap-2 text-sm text-delacroix-cream/70"
       >
         {principles.map((p) => (
-          <span key={p} className="flex items-center gap-2">
-            <span className="text-delacroix-gold">&#9679;</span> {p}
-          </span>
+          <div key={p} className="flex items-center gap-2">
+            <span className="text-green-400">&#10003;</span>
+            <span>{p}</span>
+          </div>
         ))}
       </motion.div>
     </div>

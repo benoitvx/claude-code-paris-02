@@ -1,4 +1,4 @@
-export const TOTAL_SLIDES = 7
+export const TOTAL_SLIDES = 8
 
 export const SLIDE_TRANSITION = {
   duration: 0.5,

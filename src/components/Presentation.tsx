@@ -12,6 +12,7 @@ import ArchitectureSlide from './slides/ArchitectureSlide'
 import UseCasesSlide from './slides/UseCasesSlide'
 import OpportunitySlide from './slides/OpportunitySlide'
 import OneMoreThingSlide from './slides/OneMoreThingSlide'
+import DemoSlide from './slides/DemoSlide'
 
 const slides = [
   CoverSlide,
@@ -21,6 +22,7 @@ const slides = [
   UseCasesSlide,
   OpportunitySlide,
   OneMoreThingSlide,
+  DemoSlide,
 ]
 
 export default function Presentation() {

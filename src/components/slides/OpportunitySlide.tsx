@@ -3,14 +3,6 @@
 import { motion } from 'framer-motion'
 import AnimatedText from '@/components/ui/AnimatedText'
 
-const status = [
-  { label: 'Sovereign inference operational: Albert API', done: true },
-  { label: 'Vectorized datasets available: MediaTech on Hugging Face', done: true },
-  { label: 'data.gouv MCP: in production', done: true },
-  { label: 'Légifrance integration: in discussion', done: false },
-  { label: 'Gateway architecture: designed', done: false },
-]
-
 export default function OpportunitySlide() {
   return (
     <div className="flex flex-col items-center justify-center h-full px-12 max-w-5xl mx-auto">
@@ -23,30 +15,75 @@ export default function OpportunitySlide() {
         </p>
       </AnimatedText>
 
-      <div className="space-y-4 w-full max-w-2xl mb-10">
-        {status.map((item, i) => (
-          <motion.div
-            key={item.label}
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4, delay: 0.3 + i * 0.15 }}
-            className="flex items-start gap-4 text-lg"
-          >
-            <span className={`mt-1 text-xl ${item.done ? 'text-green-400' : 'text-delacroix-gold'}`}>
-              {item.done ? '✓' : '⚒'}
-            </span>
-            <span className="text-delacroix-cream/80">{item.label}</span>
-          </motion.div>
-        ))}
+      <div className="space-y-4 w-full max-w-3xl mb-10">
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+          className="flex items-start gap-4 text-lg"
+        >
+          <span className="mt-1 text-xl text-green-400">&#10003;</span>
+          <span className="text-delacroix-cream/80">Sovereign inference operational: Albert API</span>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4, delay: 0.45 }}
+          className="flex items-start gap-4 text-lg"
+        >
+          <span className="mt-1 text-xl text-green-400">&#10003;</span>
+          <span className="text-delacroix-cream/80">
+            Vectorized datasets available on{' '}
+            <a
+              href="https://huggingface.co/AgentPublic"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-delacroix-gold hover:text-delacroix-cream transition-colors underline underline-offset-2"
+            >
+              Hugging Face
+            </a>
+          </span>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4, delay: 0.6 }}
+          className="flex items-start gap-4 text-lg"
+        >
+          <span className="mt-1 text-xl text-green-400">&#10003;</span>
+          <span className="text-delacroix-cream/80">
+            MCP data.gouv : ready &rarr;{' '}
+            <span className="text-delacroix-gold font-mono text-base">mcp.data.gouv.fr/mcp</span>
+          </span>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4, delay: 0.75 }}
+          className="flex items-start gap-4 text-lg"
+        >
+          <span className="mt-1 text-xl text-delacroix-gold">&#9874;</span>
+          <span className="text-delacroix-cream/80">Légifrance integration: in discussion</span>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4, delay: 0.9 }}
+          className="flex items-start gap-4 text-lg"
+        >
+          <span className="mt-1 text-xl text-delacroix-gold">&#9874;</span>
+          <span className="text-delacroix-cream/80">Gateway architecture: designed</span>
+        </motion.div>
       </div>
 
       <AnimatedText delay={1.2}>
-        <div className="text-center">
-          <p className="text-sm text-delacroix-cream/40 mb-3">What we&apos;re building: Open source MCP Gateway, connected to France&apos;s sovereign AI infrastructure</p>
-          <p className="text-xl text-delacroix-gold font-display">
-            You see use cases for public data? Let&apos;s talk.
-          </p>
-        </div>
+        <p className="text-xl text-delacroix-gold font-display text-center">
+          You see use cases for public data? Let&apos;s talk.
+        </p>
       </AnimatedText>
     </div>
   )

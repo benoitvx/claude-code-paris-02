@@ -29,14 +29,8 @@ export default function ProblemSlide() {
         </AnimatedText>
 
         <AnimatedText delay={1.0}>
-          <p className="text-lg text-delacroix-gold mt-8">
-            Same problem Context7 solved for technical docs, but for government data.
-          </p>
-        </AnimatedText>
-
-        <AnimatedText delay={1.2}>
-          <p className="text-base text-delacroix-cream/50 mt-4">
-            The stakes are higher: wrong legal information can have real consequences for citizens.
+          <p className="text-2xl md:text-3xl text-delacroix-gold font-display font-bold mt-8">
+            Wrong legal information can have real consequences for citizens.
           </p>
         </AnimatedText>
       </div>

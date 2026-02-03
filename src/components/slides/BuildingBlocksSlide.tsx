@@ -60,7 +60,7 @@ export default function BuildingBlocksSlide() {
 
       <AnimatedText delay={1.2} className="mt-6 text-center">
         <p className="text-sm text-delacroix-gold/80">
-          Good news: We&apos;ve started vectorizing these sources on Hugging Face &rarr; MediaTech (9 datasets, 1.5M+ documents)
+          Good news: We&apos;ve started vectorizing : 9 datasets, 1.5M+ documents
         </p>
       </AnimatedText>
     </div>
